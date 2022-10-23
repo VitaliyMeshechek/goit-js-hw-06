@@ -13,6 +13,13 @@ body {
   line-height: 1.5;
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  flex-wrap: wrap;
+}
+
 input {
   padding: 8px;
   font: inherit;
