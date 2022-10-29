@@ -9,12 +9,13 @@ function onInputChange(event) {
    const {
     elements: {email, password}
   } = event.currentTarget;
-  console.log(email.value, password.value);
 
   if (email.value === "" || password.value === "") {
    alert(`Всі поля повинні бути заповненні`)
   }
-  console.log('email: ${email.value}, password: ${password.value}');
+
+  const user = {email: email.value, password: password.value};
+  console.log(user);
   event.currentTarget.reset();
 };
 
